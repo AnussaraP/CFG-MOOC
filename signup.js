@@ -17,6 +17,7 @@ const users = JSON.parse(window.localStorage.getItem("users"));
 console.log({users})
 let firstUser = [];
 
+
 if(users === null) {
   firstUser.push(signUpList);
   console.log(firstUser);
@@ -26,6 +27,7 @@ if(users === null) {
 
 
 window.localStorage.setItem('users', JSON.stringify(users ? users : firstUser));
+
 
 
 window.location.href = "/";

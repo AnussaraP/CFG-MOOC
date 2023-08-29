@@ -64,6 +64,7 @@ function retrieveRecords() {
   for (i = 0; i < storedData.length; i++) {
     // inside the loop, create a new div element
     const div2Element = document.createElement("div");
+    div2Element.style.marginTop = "20px"
     const card = document.createElement("div");
     card.style.width = "18rem";
     card.style.marginBottom = "4rem";

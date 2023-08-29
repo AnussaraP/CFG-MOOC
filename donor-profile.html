@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <header>
+    <a href="/"><img class="logo" src="/img/img-header/logo.png" /> </a>
+  </header>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="donor-profile.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="donor-profile.css" />
+
+    <title>FoodRescue Connect</title>
   </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light firstnav">
     <button
       class="navbar-toggler"
       type="button"
@@ -29,122 +35,179 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/"
-            >Home<span class="sr-only"></span></a
-          >
+          <a class="nav-link" href="/">Home<span class="sr-only"></span></a>
         </li>
       </ul>
-      </span>
+
       <a href="add-product.html"
-        ><button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Add Product
-        </button></a>
+        ><button class="btn btn-light" type="button">Add Product</button></a
+      >
     </div>
   </nav>
+
   <body>
     <div>
-    <section class="h-100 gradient-custom-2">
-      <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col col-lg-9 col-xl-7">
-            <div class="card">
-              <div
-                class="rounded-top text-white d-flex flex-row"
-                style="background-color: #000; height: 200px"
-              >
-                <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px">
-                  <img
-                  src="img/img-donor-customer-profile/ava1.webp"
-                  alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
-                style="width: 150px; z-index: 1">
-                
-                  <button
-                    type="button"
-                    class="btn btn-outline-dark"
-                    data-mdb-ripple-color="dark"
-                    style="z-index: 1;"
-                    
-                  >
-                    Edit profile
-                  </button>
-                </div>
-                <div class="ms-3" style="margin-top: 130px">
-                  <h5>Sara Promadee</h5>
-                  <p>Bournemouth</p>
-                </div>
-              </div>
-              <div class="p-4 text-black" style="background-color: #f8f9fa">
-                <div class="d-flex justify-content-end text-center py-1">
-                  <div>
-                    <p class="mb-1 h5">253</p>
-                    <p class="small text-muted mb-0">Donate Items</p>
-                  </div>
-                  <div class="px-3">
-                    <p class="mb-1 h5">1026</p>
-                    <p class="small text-muted mb-0">Followers</p>
-                  </div>
-                  <div>
-                    <p class="mb-1 h5">478</p>
-                    <p class="small text-muted mb-0">Following</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body p-4 text-black">
-                <div class="mb-5">
-                  <p class="lead fw-normal mb-1">About</p>
-                  <div class="p-4" style="background-color: #f8f9fa">
-                    <p class="font-italic mb-1">Credit controller</p>
-                    <p class="font-italic mb-1">Lives in Bournemouth</p>
-                    <p class="font-italic mb-0">I Love traveling, supporting people, and ofcause coding!</p>
-                  </div>
-                </div>
+      <section class="h-100 gradient-custom-2">
+        <div class="container py-5 h-100">
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="col col-lg-9 col-xl-7">
+              <div class="card">
                 <div
-                  class="d-flex justify-content-between align-items-center mb-4"
+                  class="rounded-top text-white d-flex flex-row"
+                  style="background-color: #000; height: 200px"
                 >
-                  <p class="lead fw-normal mb-0">Recent added Products</p>
-                  <p class="mb-0">
-                    <a href="#!" class="text-muted"> <button>Show all</button></a>
-                  </p>
+                  <div
+                    class="ms-4 mt-5 d-flex flex-column"
+                    style="width: 150px"
+                  >
+                    <img
+                      src="img/img-donor-customer-profile/ava1.webp"
+                      alt="Generic placeholder image"
+                      class="img-fluid img-thumbnail mt-4 mb-2"
+                      style="width: 150px; z-index: 1;"
+                    />
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      data-mdb-ripple-color="dark"
+                      style="z-index: 1"
+                    >
+                      Edit profile
+                    </button>
+                  </div>
+                  <div class="ms-3" style="margin-top: 130px; padding:5px;">
+                    <h5>Anussaraara Promadee</h5>
+                    <p>Bournemouth</p>
+                  </div>
                 </div>
-                <div class="row g-2">
-                  <div class="col mb-2">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(112).webp"
-                      alt="image 1"
-                      class="w-100 rounded-3"
-                    />
-                  </div>
-                  <div class="col mb-2">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(107).webp"
-                      alt="image 1"
-                      class="w-100 rounded-3"
-                    />
+                <div class="p-4 text-black" style="background-color: #f8f9fa">
+                  <div class="d-flex justify-content-end text-center py-1">
+                    <div>
+                      <p class="mb-1 h5">253</p>
+                      <p class="small text-muted mb-0">Donate Items</p>
+                    </div>
+                    <div class="px-3">
+                      <p class="mb-1 h5">1026</p>
+                      <p class="small text-muted mb-0">Followers</p>
+                    </div>
+                    <div>
+                      <p class="mb-1 h5">478</p>
+                      <p class="small text-muted mb-0">Following</p>
+                    </div>
                   </div>
                 </div>
-                <div class="row g-2">
-                  <div class="col">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(108).webp"
-                      alt="image 1"
-                      class="w-100 rounded-3"
-                    />
+                <div class="card-body p-4 text-black">
+                  <div class="mb-5">
+                    <p class="lead fw-normal mb-1">About</p>
+                    <div class="p-4" style="background-color: #f8f9fa">
+                      <p class="font-italic mb-1">Credit controller</p>
+                      <p class="font-italic mb-1">Lives in Bournemouth</p>
+                      <p class="font-italic mb-0">
+                        I Love traveling, supporting people, and ofcause coding!
+                      </p>
+                    </div>
                   </div>
-                  <div class="col">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(114).webp"
-                      alt="image 1"
-                      class="w-100 rounded-3"
-                    />
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <p class="lead fw-normal mb-0">Recent added Products</p>
+                    <p class="mb-0">
+                      <a href="index.html#ListOfProduct" class="text-muted">
+                        <button class="btn btn-warning">Show all</button></a
+                      >
+                    </p>
+                  </div>
+                  <div class="row g-2">
+                    <div class="col mb-2">
+                      <img
+                        src="img/img-donor-customer-profile/biscuits.jpeg"
+                        alt="image 1"
+                        class="w-100 rounded-3"
+                      />
+                    </div>
+                    <div class="col mb-2">
+                      <img
+                        src="img/img-donor-customer-profile/bread.jpeg"
+                        alt="image 1"
+                        class="w-100 rounded-3"
+                      />
+                    </div>
+                  </div>
+                  <div class="row g-2">
+                    <div class="col">
+                      <img
+                        src="img/img-donor-customer-profile/Classic Beanz.jpg"
+                        alt="image 1"
+                        class="w-100 rounded-3"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="img/img-donor-customer-profile/coffee.webp"
+                        alt="image 1"
+                        class="w-100 rounded-3"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </div>
+
+      <!-- Footer -->
+    <div class="container" style="margin-bottom: 155px;">
+      <div class="row" id="container"></div>
+    </div>
+
+  
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+       <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h6>Follow us</h6>
+              <a href="https://www.instagram.com/codefirstgirls/" target="_blank">  <img class="follow-us"  src="img/img-footer/ig.png"> </a>
+              <a href="https://www.facebook.com/codefirstgirls" target="_blank"> <img class="follow-us"  src="img/img-footer/fb.png"></a>
+              <a href="https://www.linkedin.com/company/code-first-girls/" target="_blank"> <img class="follow-us"  src="img/img-footer/linkedin.png"></a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FCodeFirstGirls" target="_blank"> <img class="follow-us"  src="img/img-footer/tw.png"></a>
+            </div>
+
+          <div class="col-md-3">
+            <h6>Navigation</h6>
+            <ul class="list-unstyled">
+              <a href="index.html"> <li  >Home</li></a>
+              <a href=""><li>About us</li></a>
+
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Company</h6>
+            <ul class="list-unstyled">
+              <a href=""> <li>Our mission and vision</li></a>
+            <a href=""><li>Our team</li></a>
+              
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Support</h6>
+            <ul class="list-unstyled">
+              <a href=""><li>Contact us</li></a>
+              <a href="index.html#login"><li>Login</li></a>
+              <a href="signup.html"><li>Join us</li></a>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section>
-</div>
+    </footer>
+    
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

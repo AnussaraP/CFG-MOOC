@@ -1,59 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <header>
+    <a href="/"><img class="logo" src="/img/img-header/logo.png" > </a>
+  </header>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="customer-profile.css" />
-    <title>Document</title>
-</head>
-<body>
-    <section class="vh-100" style="background-color: #f4f5f7;">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-lg-6 mb-4 mb-lg-0">
-              <div class="card mb-3" style="border-radius: .5rem;">
-                <div class="row g-0">
-                  <div class="col-md-4 gradient-custom text-center text-white"
-                    style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-                    <img src="img/img-donor-customer-profile/ava1.webp"
-                      alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
-                    <h5>Customer Example</h5>
-                    <p>My name is customer, My family members are 5 people and we are looking for food donation...</p>
-                    <i class="far fa-edit mb-5"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body p-4">
-                      <h6>Information</h6>
-                      <hr class="mt-0 mb-4">
-                      <div class="row pt-1">
-                        <div class="col-6 mb-3">
-                          <h6>Email</h6>
-                          <p class="text-muted" id="email">info@example.com</p>
-                        </div>
-                        <div class="col-6 mb-3">
-                          <h6>Phone</h6>
-                          <p class="text-muted">123 456 789</p>
-                        </div>
+    <title>FoodRescue Connect</title>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light firstnav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only"></span></a>
+        </li>
+      </ul>
+      <span class="basket">
+        <a href="/checkout.html">
+          <img class="nav-img-checkout" src="img/img-header/nav-checkout.png" />
+          <span id="basketAmount"></span>
+        </a>
+      </span>
+      <a href="/"
+        ><button
+          type="button"
+          class="btn btn-light"
+          style="margin-left: 5px"
+        >
+          Log out
+        </button></a
+      >
+    </div>
+  </nav>
+  <body>
+    <link rel="stylesheet" href="customer-profile.css" />
+    <section class="vh-100" style="background-color: #f4f5f7">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-lg-6 mb-4 mb-lg-0">
+            <div class="card mb-3" style="border-radius: 0.5rem">
+              <div class="row g-0">
+                <div
+                  class="col-md-4 gradient-custom text-center text-white"
+                  style="
+                    border-top-left-radius: 0.5rem;
+                    border-bottom-left-radius: 0.5rem;
+                  "
+                >
+                  <img
+                    src="img/img-donor-customer-profile/ava1.webp"
+                    alt="Avatar"
+                    class="img-fluid my-5"
+                    style="width: 80px"
+                  />
+                  <h5>Customer Example</h5>
+                  <p>
+                    My name is customer, My family members are 5 people and we
+                    are looking for food donation...
+                  </p>
+                  <i class="far fa-edit mb-5"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-4">
+                    <h6>Information</h6>
+                    <hr class="mt-0 mb-4" />
+                    <div class="row pt-1">
+                      <div class="col-6 mb-3">
+                        <h6>Email</h6>
+                        <p class="text-muted" id="email">info@example.com</p>
                       </div>
-                      <h6>Over View</h6>
-                      <hr class="mt-0 mb-4">
-                      <div class="row pt-1">
-                        <div class="col-6 mb-3">
-                          <h6>family member</h6>
-                          <p class="text-muted">5</p>
-                        </div>
-                        <div class="col-6 mb-3">
-                          <h6>Occupation</h6>
-                          <p class="text-muted">N/A</p>
-                        </div>
+                      <div class="col-6 mb-3">
+                        <h6>Phone</h6>
+                        <p class="text-muted">123 456 789</p>
                       </div>
-                      <div class="d-flex justify-content-start">
-                        <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
-                        <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
-                        <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                    <h6>Over View</h6>
+                    <hr class="mt-0 mb-4" />
+                    <div class="row pt-1">
+                      <div class="col-6 mb-3">
+                        <h6>family member</h6>
+                        <p class="text-muted">5</p>
                       </div>
+                      <div class="col-6 mb-3">
+                        <h6>Occupation</h6>
+                        <p class="text-muted">N/A</p>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                      <a href="#!"
+                        ><i class="fab fa-facebook-f fa-lg me-3"></i
+                      ></a>
+                      <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
+                      <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
                     </div>
                   </div>
                 </div>
@@ -61,9 +108,66 @@
             </div>
           </div>
         </div>
-      </section>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+      </div>
+    </section>
+    
+        <!-- Footer -->
+        <footer>
+          <div class="container">
+            <div class="row justify-content-center">
+           <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <h6>Follow us</h6>
+                  <a href="https://www.instagram.com/codefirstgirls/" target="_blank">  <img class="follow-us"  src="img/img-footer/ig.png"> </a>
+                  <a href="https://www.facebook.com/codefirstgirls" target="_blank"> <img class="follow-us"  src="img/img-footer/fb.png"></a>
+                  <a href="https://www.linkedin.com/company/code-first-girls/" target="_blank"> <img class="follow-us"  src="img/img-footer/linkedin.png"></a>
+                  <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FCodeFirstGirls" target="_blank"> <img class="follow-us"  src="img/img-footer/tw.png"></a>
+                </div>
+    
+              <div class="col-md-3">
+                <h6>Navigation</h6>
+                <ul class="list-unstyled">
+                  <a href="index.html"> <li  >Home</li></a>
+                  <a href=""><li>About us</li></a>
+    
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h6>Company</h6>
+                <ul class="list-unstyled">
+                  <a href=""> <li>Our mission and vision</li></a>
+                <a href=""><li>Our team</li></a>
+                  
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h6>Support</h6>
+                <ul class="list-unstyled">
+                  <a href=""><li>Contact us</li></a>
+                  <a href="index.html#login"><li>Login</li></a>
+                  <a href="signup.html"><li>Join us</li></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
 </html>

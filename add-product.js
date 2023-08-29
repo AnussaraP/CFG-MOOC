@@ -60,7 +60,8 @@ function store() {
     // Handle the case where no file is selected
     alert("Please select an image file.");
   }
-  console.log(window.location.href = "/");
+  alert("Product added!")
+  console.log(window.location.href = "donor-profile.html");
 }
 
 
