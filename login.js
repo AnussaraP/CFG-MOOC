@@ -1,3 +1,5 @@
+
+
 function LoginUser() {
   // Retrieve the stored user data from localStorage
   const userData = JSON.parse(window.localStorage.getItem("users"));
@@ -12,6 +14,7 @@ function LoginUser() {
     console.log({ i });
 
     if (email === userData[i].email && password === userData[i].password) {
+  
       if (userData[i].userType && userData[i].userType === "customer") {
         window.location = "/customer-profile.html";
       } else if (userData[i].userType && userData[i].userType === "donor") {

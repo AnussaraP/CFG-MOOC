@@ -1,13 +1,13 @@
 body {
     background-color: lightblue;
-    background-image: url("/img/img-login/sunflower.jpg");
+    background-image: url("/img/img-header/logo.png");
   }
 
 .container{
    margin-top:4rem; 
-   background-color:pink;
+   background-color:rgb(237, 214, 167);
    padding: 15px;
-   opacity: 0.75;
+   opacity: 0.90;
   
 }
 

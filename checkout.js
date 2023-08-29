@@ -1,5 +1,6 @@
 const getBasket = () => {
     // get the basket
+
     const basket = JSON.parse(localStorage.getItem("basket"))
     // get the stored items
     const storedItems = JSON.parse(localStorage.getItem("items"));
@@ -19,9 +20,9 @@ const getBasket = () => {
           <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="${item.fileInput}" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">${item.name}</h5>
-                <p class="card-text">${item.descriptions}</p>
-                <p class="card-text"><strong>Quantity:</strong> ${quantity}</p>
+                <h5 class="card-title">Name: ${item.name}</h5>
+                <p class="card-text"><strong>Description:</strong>: ${item.descriptions}</p>
+                <p class="card-text"><strong>Amount:</strong>:${quantity}</p>
               </div>
             </div>
         </div>
@@ -63,7 +64,8 @@ const checkout = () => {
         localStorage.setItem("items", JSON.stringify(storedItems));
     }
     
-    window.location.href = "/completed-checkout.html";
+    alert("Checkout successful. Your Products are ready to collect!")
+    window.location.href = "/";
 }
 
 

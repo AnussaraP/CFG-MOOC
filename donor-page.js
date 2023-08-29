@@ -80,7 +80,9 @@ function retrieveRecords() {
     //button
     const addtobasketButton = document.createElement("button");
     addtobasketButton.type = "button";
-    addtobasketButton.style.borderRadius = "10px";
+    addtobasketButton.style.borderRadius = "5px";
+    addtobasketButton.style.padding="5px 5px"
+
 
     div2Element.classList.add("col-md-4");
     card.classList.add("card");
